@@ -3,8 +3,8 @@ FROM busybox:latest
 COPY --chmod=755 <<EOF /app/run.sh
 #!/bin/sh
 while true; do
-  echo "Die aktuelle Uhrzeit ist:"
-  echo -ne "The time is now $(date +%T)\\r"
+  echo -ne "Die aktuelle Uhrzeit in Lauffen am Neckar ist:"
+  echo -ne "Uhrzeit $(date +%T)\\r"
   sleep 1
 done
 EOF
